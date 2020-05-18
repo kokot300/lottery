@@ -4,6 +4,10 @@ import lib_lottery as ll
 
 
 def start_game():
+    """
+    main function of a game. python choses 6 random numbers from 1 to 49 and you are supposed to guess as much as you can
+    :return: None
+    """
     total_user_points = 0
     ll.clear()
     print("""Hi sweety! Let's gamble for a while.
@@ -49,9 +53,7 @@ def start_game():
 
         total_user_points += user_points
 
-        print(f"congrats! you've chosen {match} numbers right \nyour score is {user_points}")
-
-    return 0
+        print(f"congrats! you've chosen {match} numbers right \nyour score from this round is {user_points}")
 
 
 if __name__ == '__main__':
